@@ -57,5 +57,57 @@ shown in the picture below:
   
 </div>
 
+The image below verify’s that the wireless hosts could see the SSID broadcast:
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/bb46a1c7-b34e-4ea0-9a99-e148ca8aa63b)
+
+</div>
+
+## iii) Step 3L Configure Security
+
+Inorder to complete this step I first accessed the wireless security tab and at the
+2.4Ghz section selected the security mode as WPA2 Personal and used the Passphrase
+given in the WLAN table as shown below:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/70a852f1-fcf8-41a9-8453-38061f3c1269)
+
+
+</div>
+
+Finally I changed the default password by clicking the administration tab and
+changing the default password as shown below:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/6f0a89f6-1006-4316-bae6-ac641399ff35)
+
+
+</div>
+
+## Step 4: Connect Clients to the Network
+
+In order to complete this step I first connected the laptop, phone and tablet to the
+router via the PC wireless option as show in the images below:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/9da23c05-1076-4f58-91fc-0b0cf20be493)
+
+</div>
+
+For the smartphone; I selected the config tab followed by the wireless option. From
+the wireless option tab I inputted the SSID and the authentication option of
+WPA2-PSK which enabled me to enter the Passphrase leading to a successful
+connection as shown below:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/feb06977-f4b4-4637-9610-034f5d1403af)
+
+</div>
+
 ## Part 2: Configure a WCL (Wireless Lan Controller)
 # Conclusion
