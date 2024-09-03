@@ -64,7 +64,7 @@ The image below verify’s that the wireless hosts could see the SSID broadcast:
 
 </div>
 
-## iii) Step 3L Configure Security
+## iii) Step 3: Configure Security
 
 Inorder to complete this step I first accessed the wireless security tab and at the
 2.4Ghz section selected the security mode as WPA2 Personal and used the Passphrase
@@ -131,4 +131,122 @@ server and below is the result I got:
 
 
 ## Part 2: Configure a WCL (Wireless Lan Controller)
+## i) Step 1: Configure VLAN interfaces
+
+To complete this step I first accessed the WLC-1 management interface via a web
+browser as show below:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/a161e89f-63cc-40f5-8b43-c8b159b85af7)
+
+</div>
+
+Next I configured the WLANs by proceeding to the controller tab and selecting the
+interfaces option as shown below:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/ebdf82a0-414f-4a55-bfec-e41b517ccaf6)
+
+</div>
+
+Next I configured the interface for the first WLAN as shown below:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/5f15e390-83e5-4fba-8f88-92972bc3b719)
+
+</div>
+
+For the second interface the settings are as shown below. For the Primary DHCP
+server the gateway address used was **192.168.5.1**:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/983e0be7-5990-4e43-9113-be90ffe45725)
+
+</div>
+
+The resulting interfaces are as show below. The newly created interfaces are disabled
+by default:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/32725224-ca07-4157-80a5-8280a4114550)
+
+
+</div>
+
+## ii) Step 2: Configure a DHCP scope for the wireless management network
+
+In order to complete this step I selected the Internal DHCP Server and proceeded to
+the DHCP scopes and added the new entry as per the instructions. This is shown in
+the image below:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/d0ca98e6-8176-463d-8003-0b291b202a39)
+
+
+
+</div>
+
+The resulting DHCP Scopes are as shown below:
+
+<div align="center">
+
+
+![image](https://github.com/user-attachments/assets/f1d034b9-fa5b-4272-8230-e2f63df51768)
+
+
+</div>
+
+## iii) Step 3: Configure the WCL with external server address
+
+The first action I performed to complete this step is to configure the RADIUS server
+information as per the instructions given. I did this by selecting the Security tab
+followed by adding a new entry after selecting the RADIUS Authentication tab as
+shown below:
+
+<div align="center">
+
+
+![image](https://github.com/user-attachments/assets/715c6d34-3e63-4e08-b563-2337519f4a0b)
+
+
+</div>
+
+The result was an added entry as shown below:
+
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/9530cf4a-e5a8-4304-b49f-c26a06d1e819)
+
+
+
+</div>
+
+After this I configured the WLC to send logs information to an SNMP server by
+selecting the Management tab followed by the SNMP option. From here I selected the
+trap receivers option in order to create the required entry as shown below:
+
+<div align="center">
+
+
+![image](https://github.com/user-attachments/assets/79fe87d9-bb20-4070-ac94-63aafc6febb1)
+
+</div>
+
+The result was an added entry as shown below:
+
+<div align="center">
+
+
+![image](https://github.com/user-attachments/assets/926d35c5-6ae8-4b1f-906e-ae786be971ff)
+
+
+</div>
+
 # Conclusion
