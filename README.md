@@ -109,5 +109,26 @@ connection as shown below:
 
 </div>
 
+For the tablet I followed the same steps as connecting the smartphone as a successful
+connection was setup as shown below:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/df9d346f-7776-4668-b95b-4fbcfd3da47e)
+
+
+</div>
+
+Finally I had to verify connectivity. From the phone I pinged the Laptop and web
+server and below is the result I got:
+
+<div align="center">
+
+
+![image](https://github.com/user-attachments/assets/bc82d767-0153-4589-a729-ec968e8703d8)
+
+</div>
+
+
 ## Part 2: Configure a WCL (Wireless Lan Controller)
 # Conclusion
