@@ -249,4 +249,217 @@ The result was an added entry as shown below:
 
 </div>
 
+## iv) Step 4: Create the WLANs
+
+I created the WLANs by selecting the WLAN tab and creating new WLAN entries as
+described in the steps below:
+
+1. First I created a new WLAN entry:
+
+
+<div align="center">
+
+
+![image](https://github.com/user-attachments/assets/691b34a0-a9a9-46f5-93bb-0aea4d2c4552)
+
+</div>
+
+2. Next I enabled WLAN by connecting it to the necessary interface:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/c3993baa-7127-4f30-a4ee-f44d4b4698e8)
+
+</div>
+
+3. Next I set up the security setting WPA-PSK by selecting the relevant check boxes
+and set up the necessary pass phrase as shown below:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/cac38826-7019-45a3-8f82-026c6932d7d9)
+
+</div>
+
+4. Lastly I selected the Advanced tab, FlexConnect Section. Here I enabled
+FlexConnect Local Switching and FlexConnect Local Auth as shown below:
+
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/9e0cf033-19f3-46c1-a6b1-d85eed30e301)
+
+</div>
+
+5. I also enabled the WPA2 policy as shown below:
+
+ <div align="center">
+
+![image](https://github.com/user-attachments/assets/4abef587-372b-479d-b637-36acef0c076d)
+
+</div>
+
+Finally I created the second WLAN by following the steps described below:
+1. First I created a new WLAN entry:
+
+    <div align="center">
+
+![image](https://github.com/user-attachments/assets/fad80fa1-0db8-4453-b76d-cf6cff8c0790)
+
+
+</div>
+
+2. Next I enabled WLAN by connecting it to the necessary interface:
+
+   <div align="center">
+
+![image](https://github.com/user-attachments/assets/7fbfff3f-0ddd-4424-a3a2-bf98cc6a68fc)
+
+</div>
+
+3. Next I set up the security setting 802.1x - WPA2-Enterprise by selecting the
+relevant check boxes and set up the necessary pass phrase as shown below:
+
+   <div align="center">
+
+![image](https://github.com/user-attachments/assets/a05a24e6-375a-4f95-9f3e-3c3be459cde9)
+
+</div>
+
+4. Next I configured the WLAN to use the RADIUS server for authentication by
+selecting the AAA Servers option and selecting the IP address that matched the
+RADIUS server on the server 1 option as shown below:
+
+   <div align="center">
+
+![image](https://github.com/user-attachments/assets/47896ce3-925a-4c91-b996-0a50286e1dfc)
+
+</div>
+
+5. Lastly I selected the Advanced tab, FlexConnect Section. Here I enabled
+FlexConnect Local Switching and FlexConnect Local Auth as shown below:
+
+   <div align="center">
+
+![image](https://github.com/user-attachments/assets/b9b8bd37-a7b4-446a-95ef-eadcc35cc9e8)
+
+</div>
+
+The resulting WLANs after the configurations are as show below:
+
+   <div align="center">
+
+![image](https://github.com/user-attachments/assets/daf78696-0e91-4182-9ffa-a009f4417cf5)
+
+</div>
+
+## v) Step 5: Configure the hosts to connect to the WLANs
+
+I used the desktop PC wireless app to connect Wireless Host 1 to Wireless VLAN 2
+using the steps shown below:
+1. I accessed the wireless app as shown in the image below:
+
+    <div align="center">
+
+![image](https://github.com/user-attachments/assets/9b5e08b2-a978-4fcd-938f-254ad94ba9b7)
+
+
+</div>  
+
+2. I entered the correct Pass Phrase and established a connection as shown below:
+
+
+    <div align="center">
+
+![image](https://github.com/user-attachments/assets/e63d34eb-3d49-45ba-b837-4edbce1157f2)
+
+</div> 
+
+I used the desktop PC wireless app to connect Wireless Host 2 to Wireless VLAN 5
+using the steps shown below:
+1. I opened the wireless app and went to the profile tab as shown in the image below:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/2469bf4a-c6bc-4b5c-bd89-2e2f6f27149b)
+
+</div> 
+
+2. Enabled WPA2-Enterprise security by selecting it as the security option as shown below:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/5a72ad53-5af2-492b-9d9a-d66fdad7c6bc)
+
+</div>
+
+3. Used the credentials given to create authentication values:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/d2354e34-bd2a-4930-919c-ec662f189260)
+
+</div>  
+
+4. Finally I finished the connection by using the profile created as shown below:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/99b3c94e-7adb-4f8c-8de0-1e0f6fd7b385)
+
+</div>    
+
+## vi) Step 6: Test connectivity
+
+The first step I took was to set the IP configuration of both devices to DHCP so that
+they can receive IP addresses as shown below:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/f781c897-534d-4a69-b77a-15b28a3edad3)
+
+</div>  
+
+To finalize testing for connection I pinged the webserver from wireless host 2 and
+below is the result I got:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/84efb5b8-4c15-4904-9c32-e8d71527f4ad)
+
+</div> 
+
+I also tested for connectivity using the web browser from wireless host 2 as shown
+below:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/15bd1ee7-5e70-4f69-a0ca-a88584859b2b)
+
+</div> 
+
+Followed the same testing procedure for wireless host 1 and below is the feedback I
+got:
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/16899b47-9975-429d-9aaf-ab214edb7ab4)
+<br/> Tested connectivity via ping
+
+![image](https://github.com/user-attachments/assets/3780aaa1-4222-4dc2-8c68-0380afb90b7e)
+<br/> Tested connectivity via URL
+
+
+</div>
+
+   
 # Conclusion
+
+Through this activity, I successfully configured both a home wireless router and an
+enterprise WLC, implementing WPA2-PSK and WPA2-Enterprise security protocols. By securing a home network and setting up enterprise-level security on the WLC, I
+ensured that multiple devices could connect securely and reliably. The process of
+configuring interfaces, WLANs, and verifying connectivity provided me with a
+comprehensive understanding of wireless networking and security measures. This
+exercise not only reinforced my technical skills but also highlighted the importance of
+robust security in modern network environments.
+
